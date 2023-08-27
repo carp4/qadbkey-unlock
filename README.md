@@ -13,7 +13,7 @@ To use this script, you must have the following:
 Once you have obtained the prerequisites, run the script with the following command:
 
 ```sh
-$ ./qadbkey-unlock2.py -k <key>
+$ sudo python3 qadbkey-unlock2.py -k <key>
 ```
 
 ### Original Contributors
