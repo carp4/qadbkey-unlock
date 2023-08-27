@@ -28,4 +28,4 @@ AT+QADBKEY="hD0vaLg4a26u.SM"
 
 * [hornetfighter515](https://github.com/hornetfighter515) — Basic script structure and debugging.
 * [Ryan Bradley](https://github.com/rbradley0) – Tweaking and debugging.
-* [igem] (https://xnux.eu/devices/feature/qadbkey-unlock.c) – Original source code.
+* [igem](https://xnux.eu/devices/feature/qadbkey-unlock.c) – Original source code.
