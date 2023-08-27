@@ -16,6 +16,14 @@ Once you have obtained the prerequisites, run the script with the following comm
 $ sudo python3 qadbkey-unlock2.py -k <key>
 ```
 
+Example:
+
+```sh
+user@linux-mint:~/qadbkey-unlock$ sudo python3 qadbkey-unlock2.py -k 37677100
+AT+QADBKEY="hD0vaLg4a26u.SM"
+
+```
+
 ### Original Contributors
 
 * [hornetfighter515](https://github.com/hornetfighter515) — Basic script structure and debugging.
