@@ -1,6 +1,7 @@
 # Quectel RM5XX ADBKEY Unlock script
 
-This is a modification of Ryan Bradley's script to support RM5XX Series modems. It also works on the EM120K-GL modem and possibly others.
+This is a modification of Ryan Bradley's script to support RM5XX Series modems. It works for the RM520N-GL, RM502Q-AE, RM500Q-AE, EM120K-GL, and others.
+For more information, see [Getting ADB Access](https://github.com/natecarlson/quectel-rgmii-configuration-notes#getting-adb-access).
 
 ### How To Use
 
