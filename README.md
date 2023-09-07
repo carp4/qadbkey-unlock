@@ -8,7 +8,7 @@ For more information, see [Getting ADB Access](https://github.com/natecarlson/qu
 To use this script, you must have the following:
 
 * `Python >= 3`
-* The result of AT+QADBKEY? for your module.
+* `The result of AT+QADBKEY? for your module.`
 
 
 Once you have obtained the prerequisites, run the script with the following command:
