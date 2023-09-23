@@ -13,6 +13,7 @@ Modified by [iamromulan](https://github.com/iamromulan) to remove the sudo reqir
 https://onecompiler.com/python/3znepjcsq
 
 * Then replace the 12345678 with your responce from AT+QADBKEY? and click run
+
 Your adb unlock key command will be generated under output
 
 
