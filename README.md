@@ -19,11 +19,11 @@ Your adb unlock key command will be generated under output
 Alternatively, download and run the script from an environment that supports python3 and crypt with the following command:
 
 ```sh
-$ python3 qadbkey-unlock2.py
+$ python3 /path/to/qadbkey-unlock2.py
 ```
 
 Example:
-
+* In this example the script exits in the users home directory 
 ```sh
 user@linuxcomputer:~$ python3 qadbkey-unlock2.py
 Enter the AT+QADBKEY? response: 12345678
