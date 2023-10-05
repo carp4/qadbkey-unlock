@@ -2,26 +2,33 @@
 
 This is a modification of Ryan Bradley's script to support RM5XX Series modems. It works for the RM520N-GL, RM502Q-AE, RM500Q-AE, EM120K-GL, and others.
 For more information, see [Getting ADB Access](https://github.com/natecarlson/quectel-rgmii-configuration-notes#getting-adb-access).
+This will allow you to replace the Quectel Forums step of the guide with an easier and faster method.
+
+Modified by [carp4](https://github.com/carp4) to allow AT+QADBKEY? to be entered directly and result displayed for RM5XX series modems.
+
+Modified by [iamromulan](https://github.com/iamromulan) to remove the sudo reqirement and query the user to input the AT+QADBKEY? response from the modem.
 
 ### How To Use
+* To use this script, simply go to the following URL:
+https://onecompiler.com/python/3znepjcsq
 
-To use this script, you must have the following:
+* Then replace the 12345678 with your responce from AT+QADBKEY? and click run
 
-* `Python >= 3`
-* `The result of AT+QADBKEY? for your module.`
+Your adb unlock key command will be generated under output
 
 
-Once you have obtained the prerequisites, run the script with the following command:
+Alternatively, download and run the script from an environment that supports python3 and crypt with the following command:
 
 ```sh
-$ sudo python3 qadbkey-unlock2.py -k <key>
+$ python3 /path/to/qadbkey-unlock2.py
 ```
 
 Example:
-
+* In this example the script exits in the users home directory 
 ```sh
-user@linux-mint:~/qadbkey-unlock$ sudo python3 qadbkey-unlock2.py -k 37677100
-AT+QADBKEY="hD0vaLg4a26u.SM"
+user@linuxcomputer:~$ python3 qadbkey-unlock2.py
+Enter the AT+QADBKEY? response: 12345678
+AT+QADBKEY="0jXKXQwSwMxYoeg"
 
 ```
 

@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 File: qadbkey-unlock2.py
-Modified by carp4 to allow AT+QADBKEY? to be entered directly and result displayed for RM5XX series modems
+Modified by carp4 to allow AT+QADBKEY? to be entered directly and result displayed for RM5XX series modems.
+Modified by iamromulan to remove the sudo reqirement and query the user to input the AT+QADBKEY? response from the modem.
 Authors: hornetfighter515, FatherlyFox
 Year: 2021
 Version: 2.0
@@ -9,7 +10,10 @@ Credits: Original by igem, https://xnux.eu/devices/feature/qadbkey-unlock.c, htt
 Description: Works to assist in unlocking ADB access for the PinePhone.
 P.S. Thankyou for making a functional script hornetfighter515 ❤
 """
-import logging, os, argparse
+import logging
+import os
+import argparse
+import sys
 
 def generateUnlockKey(sn):
     """
@@ -20,14 +24,8 @@ def generateUnlockKey(sn):
     return c[12:27]
 
 def main():
-    if os.geteuid() != 0:
-        logging.error('This script must be run as a superuser, preferrably using \'sudo\'')
-        exit(1)
-    else:
-        parser = argparse.ArgumentParser()
-        parser.add_argument('-k', '--key', '--adb_key', required=True, help='Specify the adbkey, e.g. AT+QADBKEY?', type=str)     
-        args = parser.parse_args()
-        c = generateUnlockKey(args.key)
+        key = input("Enter the AT+QADBKEY? response: ")
+        c = generateUnlockKey(key)
         print('AT+QADBKEY="{0}"'.format(c))
 
 if __name__ == "__main__":
