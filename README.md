@@ -1,7 +1,7 @@
 # Quectel RM5XX ADBKEY Unlock script
 
 This is a modification of Ryan Bradley's script to support RM5XX Series modems. It works for the RM520N-GL, RM502Q-AE, RM500Q-AE, EM120K-GL, and others.
-For more information, see [Unlocking and Using ADB](https://github.com/iamromulan/quectel-rgmii-configuration-notes#unlocking-and-using-adb).
+For more information, see [Unlocking ADB](https://github.com/iamromulan/cellular-modem-wiki/blob/main/quectel/sdxlemur/sdxlemur_m.2_to_eth.md#unlocking-adb).
 This will allow you to replace the Quectel Forums step of the guide with an easier and faster method.
 
 Modified by [carp4](https://github.com/carp4) to allow AT+QADBKEY? to be entered directly and result displayed for RM5XX series modems.
@@ -24,7 +24,7 @@ $ python3 /path/to/qadbkey-unlock2.py
 ```
 
 Example:
-* In this example the script exits in the users home directory 
+* In this example the script exists in the users home directory 
 ```sh
 user@linuxcomputer:~$ python3 qadbkey-unlock2.py
 Enter the AT+QADBKEY? response: 12345678
