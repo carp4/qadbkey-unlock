@@ -10,17 +10,24 @@ Modified by [iamromulan](https://github.com/iamromulan) to remove the sudo reqir
 
 ### How To Use
 * To use this script, simply go to the following URL:
-https://onecompiler.com/python/3znepjcsq
+https://onecompiler.com/python/4592kvtmb
 
 * Then replace the 12345678 with your responce from AT+QADBKEY? and click run
 
 Your adb unlock key command will be generated under output
 
 
-Alternatively, download and run the script from an environment that supports python3 and crypt with the following command:
+Alternatively, download and run the script with any Python 3 interpreter. It only uses the standard library and no longer needs the `crypt` module (removed from Python 3.13), so it runs on Linux, macOS, Windows, Termux and so on:
 
 ```sh
 $ python3 /path/to/qadbkey-unlock2.py
+```
+
+You can check the key derivation still works on your interpreter with the built-in self test (it compares against MD5-crypt vectors known to match glibc `crypt()`):
+
+```sh
+$ python3 qadbkey-unlock2.py --self-test
+self-test OK (8 vectors)
 ```
 
 Example:
