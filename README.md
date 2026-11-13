@@ -10,7 +10,7 @@ Modified by [iamromulan](https://github.com/iamromulan) to remove the sudo reqir
 
 ### How To Use
 * To use this script, simply go to the following URL:
-https://onecompiler.com/python/4592kvtmb
+https://onecompiler.com/python/4592mhb32
 
 * Then replace the 12345678 with your responce from AT+QADBKEY? and click run
 

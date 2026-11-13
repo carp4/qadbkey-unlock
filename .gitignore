@@ -17,3 +17,6 @@ pyvenv.cfg
 pip-selfcheck.json
 
 # End of https://www.toptal.com/developers/gitignore/api/venv
+
+# Workspace-side notes for this clone, never published
+NOTES.md
